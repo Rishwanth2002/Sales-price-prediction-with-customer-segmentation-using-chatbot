@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+
+    text-align: center;
+	justify-content:center;
+	align-items: center;
+	
+	font-family: 'Jost', sans-serif;
+	/* background:  #ffffff; */
+	/* background: linear-gradient(rgba(70, 51, 237, 0.8), rgb(153, 0, 255), rgba(195, 79, 224, 0.8)); */
+	background-image: url("v915-wit-011-k.jpg");
+	background-repeat: "no-repeat";
+	background-size: cover;
+}

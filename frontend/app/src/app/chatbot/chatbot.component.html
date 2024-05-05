@@ -1,0 +1,38 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <title>Create Your Own Chatbot</title>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width" />
+   <link rel="stylesheet" href="chatbot.component.css" />
+ </head>
+ <body>
+   <div class="card">
+     <div id="header">
+       <h1>Suggestion Box</h1>
+     </div>
+     <div id="message-section">
+       <!-- Messages will be dynamically added here -->
+     </div>
+     <div id="input-section">
+       <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus" />
+       <button class="send" type="submit" (click)="sendMessage()">Send</button>
+     </div>
+   </div>
+   <div>
+     <input type="submit" value="Give Feedback" style="float:right" class="btn-primary" id="sub" (click)="onFeedback()" />
+   </div>
+
+   <div class="notes-card">
+    <div class="notes-content">
+      <h3>Note:</h3>
+      <p><strong>1.</strong> Before using the suggestion box, it's important to predict the graph.</p>
+      <p><strong>2.</strong> Use "can i buy" text to get suggestions.</p>
+      
+    </div>
+  </div>
+  
+ </body>
+ </html>
+ 

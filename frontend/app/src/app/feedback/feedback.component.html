@@ -1,0 +1,29 @@
+
+  <h2>Feedback Form</h2>
+  <form (submit)="submitFeedback()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required #nameInput>
+  
+      <label for="email">Customer ID:</label>
+      <input type="number" id="customerid" name="customerid" required #customeridInput>
+  
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" required #feedbackInput></textarea>
+
+      <input type="submit" class="btn-primary" id="sub" value="Finish" (click)="onFinish()">
+      <input type="submit" class="btn-primary" id="sub" value="Submit">
+      
+      
+
+  </form>
+  
+  <br>
+  <h2 style="text-align: center;">Feedbacks</h2>
+  <div id="feedbackContainer">
+      <div *ngFor="let feedback of storedFeedbacks" class="feedback-card">
+          <strong>Name:</strong> {{ feedback.name }}<br>
+          <strong>Customer ID:</strong> {{ feedback.customerid }}<br>
+          <strong>Feedback:</strong> {{ feedback.feedback }}
+      </div>
+  </div>
+  
